@@ -17,6 +17,39 @@ finish-args:
   - --filesystem=xdg-download
   - --talk-name=org.freedesktop.Notifications
 modules:
+  - name: NetworkManager
+    buildsystem: meson
+    build-options:
+      cflags: -ltinfo
+      cxxflags: -ltinfo
+    config-opts:
+      - -Dlibaudit=no
+      - -Ddbus_conf_dir=/app/etc/dbus-1/system.d
+      - -Ddbus_ifaces_dir=/app/share/dbus-1/interfaces
+      - -Ddbus_sys_dir=/app/share/dbus-1/system.d
+      - -Ddnsmasq=/usr/bin/true
+      - -Ddocs=false
+      - -Dintrospection=false
+      - -Diptables=/usr/bin/true
+      - -Djson_validation=false
+      - -Dlibnm_glib=false
+      - -Dlibpsl=false
+      - -Dmodem_manager=false
+      - -Dnmtui=false
+      - -Dovs=false
+      - -Dppp=false
+      - -Dqt=false
+      - -Dselinux=false
+      - -Dsession_tracking=no
+      - -Dsystemdsystemunitdir=no
+      - -Dsystemd_journal=false
+      - -Dtests=no
+      - -Dvapi=false
+    sources:
+      - type: git
+        url: 'https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git'
+        tag: "1.32.12"
+
   - name: flutube
     buildsystem: simple
     build-commands:
