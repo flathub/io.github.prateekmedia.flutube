@@ -129,9 +129,9 @@ modules:
     buildsystem: simple
     build-commands:
       - cp -R flutube/usr/bin/ /app/flutube
-      - cp -R flutube/usr/share/ /app/share
+      - mkdir -p /app/bin/ /app/share/
+      - cp -R flutube/usr/share/ /app
       - sed -i 's/<id>flutube/<id>io.github.prateekmedia.flutube/' /app/share/metainfo/flutube.appdata.xml
-      - mkdir -p /app/bin/
       - ln -s /app/flutube/flutube /app/bin/flutube
     sources:
       - type: archive
