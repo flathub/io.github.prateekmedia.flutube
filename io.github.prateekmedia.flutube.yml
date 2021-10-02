@@ -14,7 +14,7 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=dri
-  - --filesystem=xdg-download
+  - --filesystem=xdg-download/FluTube:create
   - --talk-name=org.freedesktop.Notifications
   - --system-talk-name=org.freedesktop.NetworkManager
 modules:
