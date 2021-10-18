@@ -1,6 +1,6 @@
 app-id: io.github.prateekmedia.flutube
 runtime: org.gnome.Platform
-runtime-version: "41"
+runtime-version: '41'
 sdk: org.gnome.Sdk
 rename-icon: flutube
 rename-appdata-file: flutube.appdata.xml
@@ -30,9 +30,9 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/prateekmedia/flutube/releases/download/0.5.0/flutube-linux-x86_64.tar.gz
+        url: https://github.com/prateekmedia/flutube/releases/download/0.6.0/flutube-linux-x86_64.tar.gz
         dest: flutube
-        sha256: e040a98f1612a25a65ffa507c568c8f1599dea9633afc796c63ab95f47031bdd
+        sha256: a441d66a696cf635be87762cb9e29cf5ec14debcbfd3d721c8b16a4844bae67e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/prateekmedia/flutube/releases/latest
