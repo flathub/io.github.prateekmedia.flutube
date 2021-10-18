@@ -32,7 +32,7 @@ modules:
           - x86_64
         url: https://github.com/prateekmedia/flutube/releases/download/0.6.0/flutube-linux-x86_64.tar.gz
         dest: flutube
-        sha256: aeeca6b70edf160a4ff6fbcb30ac361a35de9a86797cc96d66c66c2eaa9c6a1d
+        sha256: 9025b934b5db16a28b820a2abdcb13226d76b9025e07d7e622165b28e7237328
         x-checker-data:
           type: json
           url: https://api.github.com/repos/prateekmedia/flutube/releases/latest
