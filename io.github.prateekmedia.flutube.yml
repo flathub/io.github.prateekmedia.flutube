@@ -30,9 +30,9 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/prateekmedia/flutube/releases/download/0.6.0/flutube-linux-x86_64.tar.gz
+        url: https://github.com/prateekmedia/flutube/releases/download/1.0.0/flutube-linux-x86_64.tar.gz
         dest: flutube
-        sha256: c83d4b4e5b8266a400b0f50128706099565b9e7e180dfd8d8a357c22fc992441
+        sha256: 84c984f0503f600f0b5c03c5a2a3b4bad478ce4f02a077d6e7d3a82e6e41dc36
         x-checker-data:
           type: json
           url: https://api.github.com/repos/prateekmedia/flutube/releases/latest
