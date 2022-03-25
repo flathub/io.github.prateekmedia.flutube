@@ -30,7 +30,7 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/prateekmedia/flutube/releases/download/1.1.0/flutube-linux-x86_64.tar.gz
+        url: https://github.com/prateekmedia/pstube/releases/download/1.1.0/flutube-linux-x86_64.tar.gz
         dest: flutube
         sha256: 60f38736da44e9f2b4cb8e2a3b7d14846d3509c72b114e04ccd45e10544e6466
         x-checker-data:
