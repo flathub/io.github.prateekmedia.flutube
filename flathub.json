@@ -1,5 +1,6 @@
 {
     "skip-arches": [
         "aarch64"
-    ]
+    ],
+    "end-of-life": "Use PsTube instead."
 }
